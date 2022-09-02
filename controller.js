@@ -124,9 +124,9 @@ $(document).ready(function() {
       $('#feedback').append('<img src="cross.png">');
       $('#inputBox').css("background-color", "red");
       $('#inputBox').css("color", "white");
-      $('#inputBox').val($('#inputBox').val() + " (ans= " + currentAnswer + ")");
+      $('#inputBox').val($('#inputBox').val() + " (ans = " + currentAnswer + ")");
     }
-    $('#message').append('Press ENTER to continue');
+    $('#message').append('Press <b>ENTER</b> or <b>SUBMIT</b> button to continue.');
     $("#inputBox").prop('disabled', true);
     $("#gameArea").focus();
     gamePosition = 2;
@@ -135,9 +135,9 @@ $(document).ready(function() {
 
   function scorePage() {
     $("#gameArea").empty();
-    $("#gameArea").append("<h1>You have finished the quiz.</h1><br><br>");
-    $("#gameArea").append("Final score: " + score + ' | ' + numberOfQuestions + '<br><br>');
-    $("#gameArea").append("Press ENTER to try again.");
+    $("#gameArea").append("<h1>You have finished the test.</h1><br><br>");
+    $("#gameArea").append("Final score: <b>" + score + '</b> out of <b>' + numberOfQuestions + '</><br><br>');
+    $("#gameArea").append("Press <b>ENTER</b> or <b>SUBMIT</b> button to continue.");
     gamePosition = 4;
   }//scorePage
 

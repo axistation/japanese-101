@@ -2,6 +2,15 @@ body{
 	font-family:Helvetica, sans-serif;
 }
 
+a {
+  color: #000;
+  text-decoration: none;
+}
+a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
 .form-select {
   font-size: 1.2rem;
   color: #555;
@@ -39,7 +48,7 @@ body{
   font-size: 2rem;
 }
 
-#inputBox{
+#inputBox {
 	border:2px #69F solid; 
 	border-radius:3px;
 	padding:10px;
