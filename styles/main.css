@@ -6,6 +6,7 @@ body{
   font-size: 1.2rem;
   color: #555;
   margin: auto;
+  max-width:38rem;
 }
 
 #btn {
