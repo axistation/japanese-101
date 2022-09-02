@@ -1,0 +1,24 @@
+{
+  "instruction": "<b>Take each noun and conjugate it to the forms:</b><br/>declarative,<br/> negative state-of-being,<br/> past state-of-being,<br/> negative past state-of-being.<br/><br/><b>Example これ:</b><br/>これだ、これじゃない、これだった、これじゃなかった ",
+  "qlist":[
+	{
+		"q":"これ",
+		"a":"これだ、これじゃない、これだった、これじゃなかった"
+	},
+  {
+		"q":"大人【おとな】",
+		"a":"大人だ、大人じゃない、大人だった、大人じゃなかった"
+	},
+  {
+		"q":"学校【がっこう】",
+		"a":"友達だ、友達じゃない、友達だった、友達じゃなかった"
+	},
+  {
+		"q":"友達【ともだち】",
+		"a":"友達だ、友達じゃない、友達だった、友達じゃなかった"
+	},
+  {
+		"q":"学生【がくせい】",
+		"a":"学生だ、学生じゃない、学生だった、学生じゃなかった"
+	}
+]}

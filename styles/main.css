@@ -1,0 +1,52 @@
+body{
+	font-family:Helvetica, sans-serif;
+}
+
+.form-select {
+  font-size: 1.2rem;
+  color: #555;
+  margin: auto;
+}
+
+#btn {
+  border: 1px solid #ccc;
+  background: #fefefe;
+  border-radius: 5px;
+  font-weight:700;
+	max-width:38rem;
+  margin:auto;
+  width: 100%;
+}
+#btn:hover {
+  border-color: #333;
+}
+
+#gameArea{
+	max-width:38rem;
+	margin:auto;
+	margin-top:2rem;
+	padding:1rem;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+
+#wordBox{
+  text-align: center;
+  width:100%;
+  padding:10px;
+  font-size: 2rem;
+}
+
+#inputBox{
+	border:2px #69F solid; 
+	border-radius:3px;
+	padding:10px;
+	width:100%;
+}
+
+ 
+@media screen and (max-width:800px){
+	#gameArea,#btn,.form-select{
+		width:96%;
+	}
+}

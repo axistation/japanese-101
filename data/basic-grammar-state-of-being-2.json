@@ -1,0 +1,12 @@
+{
+  "instruction": "Translate from English to Japanese. (assume all declarative)",
+  "qlist":[
+	{
+		"q":"Is college.",
+		"a":"大学だ。"
+	},
+  {
+		"q":"Is not high school.",
+		"a":"高校じゃない。"
+	}
+]}
