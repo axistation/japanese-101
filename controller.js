@@ -126,7 +126,7 @@ $(document).ready(function() {
       $('#inputBox').css("color", "white");
       $('#inputBox').val($('#inputBox').val() + " (ans = " + currentAnswer + ")");
     }
-    $('#message').append('Press <b>ENTER</b> or <b>SUBMIT</b> button to continue.');
+    $('#message').append('Press <b>ENTER</b> or <b>NEXT</b> button to continue.');
     $("#inputBox").prop('disabled', true);
     $("#gameArea").focus();
     gamePosition = 2;
@@ -137,7 +137,7 @@ $(document).ready(function() {
     $("#gameArea").empty();
     $("#gameArea").append("<h1>You have finished the test.</h1><br><br>");
     $("#gameArea").append("Final score: <b>" + score + '</b> out of <b>' + numberOfQuestions + '</><br><br>');
-    $("#gameArea").append("Press <b>ENTER</b> or <b>SUBMIT</b> button to continue.");
+    $("#gameArea").append("Press <b>ENTER</b> or <b>NEXT</b> button to continue.");
     gamePosition = 4;
   }//scorePage
 

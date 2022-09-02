@@ -1,7 +1,9 @@
 body{
 	font-family:Helvetica, sans-serif;
 }
-
+.navbar {
+  background: #fff;
+}
 a {
   color: #000;
   text-decoration: none;
