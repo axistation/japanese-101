@@ -4,6 +4,7 @@ $(document).ready(function() {
   var currentQuestionNumber;
   var currentAnswer;
   var numberOfQuestions;
+  const howManyQuestions = 1;
   var gamePosition;
   var score;
 
@@ -29,6 +30,7 @@ $(document).ready(function() {
           questionBank[i] = typeArray;
         }
         gamePosition = 1;
+        
         resetGame();
         updateQuestion();
       })//getJSON
@@ -40,6 +42,7 @@ $(document).ready(function() {
 
   function resetGame() {
     scrambleQuestions();
+    
     currentQuestionNumber = 0;
     score = 0;
     $("#gameArea").empty();
@@ -60,6 +63,7 @@ $(document).ready(function() {
       questionBank[rnd1] = questionBank[rnd2];
       questionBank[rnd2] = tempArray;
     }
+    questionBank.slice(0, howManyQuestions)
   }//scramble questions
 
 
@@ -130,13 +134,13 @@ $(document).ready(function() {
     $("#inputBox").prop('disabled', true);
     $("#gameArea").focus();
     gamePosition = 2;
-    if (currentQuestionNumber == numberOfQuestions) { gamePosition = 3; }
+    if (currentQuestionNumber == howManyQuestions) { gamePosition = 3; }
   }//checkAnswer
 
   function scorePage() {
     $("#gameArea").empty();
     $("#gameArea").append("<h1>You have finished the test.</h1><br><br>");
-    $("#gameArea").append("Final score: <b>" + score + '</b> out of <b>' + numberOfQuestions + '</><br><br>');
+    $("#gameArea").append("Final score: <b>" + score + '</b> out of <b>' + howManyQuestions + '</><br><br>');
     $("#gameArea").append("Press <b>ENTER</b> or <b>NEXT</b> button to continue.");
     gamePosition = 4;
   }//scorePage
