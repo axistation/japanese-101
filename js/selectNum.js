@@ -1,4 +1,5 @@
 var numArray = [
+  "Select Number of Questions",
   "5",
   "10",
   "20",

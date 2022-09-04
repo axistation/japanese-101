@@ -12,10 +12,7 @@ $(document).ready(function() {
   selectTest();
   selectNum();
 
-  $("#select-num")
-    .change(function() {
-      howManyQuestions = $("#select-num option:selected").text();
-    })
+  
   
   $("#select-test")
     .change(function() {
@@ -44,6 +41,14 @@ $(document).ready(function() {
       })//getJSON
     })
     .change();
+
+    $("#select-num")
+    .change(function() {
+      howManyQuestions = $("#select-num option:selected").text();
+      gamePosition = 1;
+        resetGame();
+        updateQuestion();
+    });
 
 
 
