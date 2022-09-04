@@ -4,16 +4,23 @@ $(document).ready(function() {
   var currentQuestionNumber;
   var currentAnswer;
   var numberOfQuestions;
-  const howManyQuestions = 1;
+  var howManyQuestions;
   var gamePosition;
   var score;
 
   var instruction;
-  selectMenu();
-  $("#selectMenu")
+  selectTest();
+  selectNum();
+
+  $("#select-num")
+    .change(function() {
+      howManyQuestions = $("#select-num option:selected").text();
+    })
+  
+  $("#select-test")
     .change(function() {
       var str = "";
-      $("select option:selected").each(function() {
+      $("#select-test option:selected").each(function() {
         str += $(this).text() + ".json";
       });
       str = str.replace(/\s+/g, '-').toLowerCase();
@@ -29,8 +36,9 @@ $(document).ready(function() {
           typeArray[1] = data.qlist[i].a;
           questionBank[i] = typeArray;
         }
-        gamePosition = 1;
         
+        gamePosition = 1;
+
         resetGame();
         updateQuestion();
       })//getJSON
@@ -134,6 +142,7 @@ $(document).ready(function() {
     $("#inputBox").prop('disabled', true);
     $("#gameArea").focus();
     gamePosition = 2;
+    if (currentQuestionNumber == numberOfQuestions) { gamePosition = 3; }
     if (currentQuestionNumber == howManyQuestions) { gamePosition = 3; }
   }//checkAnswer
 
