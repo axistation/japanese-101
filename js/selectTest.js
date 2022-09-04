@@ -1,5 +1,6 @@
 var testArray = [
   "Select a Test",
+  "Japanese Vocab",
   "The Writing System Hiragana",
   "The Writing System Katakana",
   "Basic Grammar State of Being 1",
