@@ -1,0 +1,48 @@
+{  
+  "instruction": "Translate to English.",
+  "qlist":[
+	{
+		"q":"はい、わかりました。",
+		"a":"yes, understood."
+	},
+	{
+		"q":"はい、そうです。",
+		"a":"yes, it is so."
+	},
+	{
+		"q":"いいえ、そうじゃありません。",
+		"a":"no, it is not so."
+	},
+	{
+		"q":"初めまして。",
+		"a":"how do you do?"
+	},
+	{
+		"q":"おはよう。・おはようございます。",
+		"a":"good morning."
+	},
+	{
+		"q":"今日は。",
+		"a":"good day/afternoon."
+	},
+	{
+		"q":"今晩は。",
+		"a":"good evening."
+	},
+	{
+		"q":"さようなら。",
+		"a":"goodbye"
+	},
+	{
+		"q":"じゃ、また。",
+		"a":"bye."
+	},
+	{
+		"q":"お休みんさい。",
+		"a":"goodnight."
+	},
+	{
+		"q":"はい。",
+		"a":"yes."
+	}
+]}

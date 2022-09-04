@@ -27,6 +27,7 @@ $(document).ready(function() {
         questionBank = [];
         typeArray = [];
         numberOfQuestions = data.qlist.length;
+        howManyQuestions = data.qlist.length;
         for (i = 0; i < data.qlist.length; i++) {
           typeArray = [];
           typeArray[0] = data.qlist[i].q;
